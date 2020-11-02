@@ -22,12 +22,7 @@ function checkTranspose(A) {
 
 
 function isSym(A) {
-    let matrix = [
-        [8, 15, 6],
-        [8, 10, 4],
-        [9, 4, 8],
-    ]
-    
+    let matrix = sum(A, transpose(A))
 
     for (let row = 0; row < matrix.length; ++row) {
         for (let col = 0; col < matrix[0].length; ++col) {
@@ -40,9 +35,9 @@ function isSym(A) {
 }
 
 let M = [
-    [8, 15, 6],
-    [8, 10, 4],
-    [9, 4, 8],
+    [1, 5, 6],
+    [5, 1, 4],
+    [6, 4, 1],
 ]
 
-console.log(isSym(M));
+beautyLog(sum(M, transpose(M)))
