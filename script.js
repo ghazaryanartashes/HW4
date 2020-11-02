@@ -40,4 +40,4 @@ let M = [
     [6, 4, 1],
 ]
 
-beautyLog(sum(M, transpose(M)))
+
